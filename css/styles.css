@@ -9,6 +9,11 @@
 }
 
 html, body {
+<<<<<<< HEAD
+=======
+	font-family: 'Raleway', sans-serif;
+	line-height: 180%;
+>>>>>>> develop
 	height: 100%;
 	margin: 0; 
 	padding: 0;
@@ -311,4 +316,77 @@ html, body {
 	height: 1px;
 	margin: auto;
 	width: 20%;
+}
+
+#home-content {
+	width: 1326px;
+	margin: 0 auto;
+}
+
+.about {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 255px;
+}
+
+
+.about-title::after {
+	position: relative;
+	content: '';
+	display: block;
+    width: 100px;
+    height: 1px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #00CEC9;
+
+}
+
+.about > p {
+	width: 50%;
+	text-align: center;
+}
+
+.about-content {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.about-content > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 486px;
+}
+
+#connector-1 {
+	display: block;
+	width: 550px;
+	margin: 0 auto;
+}
+
+#connector-2 {
+	display: block;
+	width: 550px;
+	margin: 0 auto;
+	transform: scaleX(-1);
+}
+
+.bottom-quote {
+	font-size: 24px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 255px;
+	margin-top: 255px;
+	width: 550px;
+}
+
+.bottom-quote > p {
+	text-align: right;
 }
