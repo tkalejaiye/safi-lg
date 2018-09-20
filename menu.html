@@ -11,8 +11,8 @@
   <body>
     <div class="navbar">
       <div class="nav-links-center">
-        <span><a href="#">HOME</a></span>
-        <span><a href="#">MENU</a></span>
+        <span><a href="./index.html">HOME</a></span>
+        <span><a href="menu.html">MENU</a></span>
         <span><a href="#">CONTACT</a></span>
       </div>
       <div class="nav-links-right">
@@ -36,11 +36,11 @@
       </div>
       <div class="menu">
         <div class="header">
-          <button>Brunch</button>
-          <button>Regular</button>
-          <button>Cocktail</button>
+          <button onclick="showMenu('brunch')">Brunch</button>
+          <button onclick="showMenu('regular')">Regular</button>
+          <button onclick="">Cocktail</button>
         </div>
-        <embed src="./assets/pdfs/main menu.pdf" height="1500" width="800px"/>
+        <embed id="menu-holder" src="./assets/pdfs/main.pdf" height="1500" width="800px"/>
       </div>
     </div>
     <div class="footer">
