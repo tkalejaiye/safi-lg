@@ -1,5 +1,14 @@
+@font-face {
+	font-family: 'Century Gothic';
+	src: url('./../assets/fonts/CenturyGothic.eot');
+	src: url('./../assets/fonts/CenturyGothic.eot?#iefix') format('embedded-opentype'),
+			 url('./../assets/fonts/CenturyGothic.woff') format('woff'),
+			 url('./../assets/fonts/CenturyGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html, body {
-	font-family: 'Raleway', sans-serif;
 	line-height: 180%;
 	height: 100%;
 	margin: 0; 
@@ -35,9 +44,16 @@ html, body {
 	width: 1326px;
 }
 
+.content {
+	display: block;
+	margin: auto;
+	width: 90%;
+}
+
 .footer {
 	bottom: 0;
 	display: contents;
+	font-family: 'Raleway', sans-serif;
 	position: absolute;
 	width: 100%;
 }
@@ -112,6 +128,61 @@ html, body {
 	z-index: 99;
 }
 
+.menu,
+.menu > .header {
+	display: table;
+	width: 100%;
+}
+
+.menu > embed {
+	height: 1000px;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.menu > .header > button {
+	border: none;
+	cursor: pointer;
+	font-family: 'Century Gothic';
+	font-size: 1.4em;
+	letter-spacing: 0.6em;
+	line-height: 28px;
+	margin: 8px 0;
+	outline: none;
+	padding: 45px;
+	width: 33.3%;
+}
+
+.menu > .header > button:nth-child(even),
+.menu > .header > button:nth-child(even):active,
+.menu > .header > button:nth-child(even):focus {
+	background: #000000;
+	color: white;
+	transition-duration: 200ms;
+	transition-property: background-color color;
+	transition-timing-function: linear;
+}
+
+.menu > .header > button:nth-child(even):hover {
+	background: white;
+	color: black;
+}
+
+.menu > .header > button:nth-child(odd),
+.menu > .header > button:nth-child(odd):active,
+.menu > .header > button:nth-child(odd):focus {
+	background: #00817E;
+	color: black;
+	transition-duration: 200ms;
+	transition-property: background-color color;
+	transition-timing-function: linear;
+}
+
+.menu > .header > button:nth-child(odd):hover {
+	background: white;
+	color: #00817E;
+}
+
 .menu-header {
 	align-items: center;
 	background: url("../assets/menu_header_image.png");
@@ -138,6 +209,7 @@ html, body {
 
 .navbar {
 	display: flex;
+	font-family: 'Raleway', sans-serif;
 	justify-content: center;
 	margin: auto;
 	padding-right: 0;
@@ -198,6 +270,50 @@ html, body {
 	width: 15px;
 }
 
+.section {
+	min-height: 380px;
+	padding: 50px;
+	width: 100%;
+}
+
+.v-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-body {
+	color: #3D3D3D;
+	display: block;
+	font-family: 'Century Gothic';
+	font-size: 16px;
+	letter-spacing: 0.2vh;
+	line-height: 3.5vh;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-header {
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.2vh;
+	line-height: 7vh;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.text-header::after {
+	background: #00CEC9;
+	content: '';
+	display: block;
+	height: 1px;
+	margin: auto;
+	width: 20%;
+}
+
 #home-content {
 	width: 1326px;
 	margin: 0 auto;
@@ -226,8 +342,9 @@ html, body {
 }
 
 .about > p {
-	width: 50%;
+	font-family: 'Century Gothic';
 	text-align: center;
+	width: 50%;
 }
 
 .about-content {
@@ -238,32 +355,42 @@ html, body {
 }
 
 .about-content > div {
+	align-items: flex-start;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
 	width: 486px;
+}
+
+.about-content > div > h3 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.about-content > div > p {
+	font-family: 'Century Gothic';
 }
 
 #connector-1 {
 	display: block;
-	width: 550px;
 	margin: 0 auto;
+	width: 550px;
 }
 
 #connector-2 {
 	display: block;
-	width: 550px;
 	margin: 0 auto;
 	transform: scaleX(-1);
+	width: 550px;
 }
 
 .bottom-quote {
+	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
-	text-align: center;
+	letter-spacing: 0.2em;
 	margin: 0 auto;
 	margin-bottom: 255px;
 	margin-top: 255px;
+	text-align: center;
 	width: 550px;
 }
 
