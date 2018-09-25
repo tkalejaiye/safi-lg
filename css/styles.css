@@ -107,7 +107,7 @@ html, body {
 	justify-content: center;
 	margin: 0 auto;
 	width: 1326px;
-	animation: fade-in 1s 1 ease-in-out;
+	animation: fade-in 1s 1 linear;
 }
 
 .home-header::before {
@@ -194,7 +194,7 @@ html, body {
 	justify-content: center;
 	margin: 0 auto;
 	width: 1326px;
-	animation: fade-in 1s 1 ease-in-out;
+	animation: fade-in 1s 1 linear;
 }
 
 @keyframes fade-in {
@@ -206,6 +206,7 @@ html, body {
 		opacity: 1;
 	}
 }
+
 
 .menu-header::before {
 	background-color: #303030;
@@ -238,6 +239,17 @@ html, body {
 
 .nav-links-center > span > a {
 	color: black;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 0.3vh;
+	line-height: 16px;
+	margin-left: 27px;
+	margin-right: 27px;
+	text-decoration: none;
+}
+
+.nav-links-center > span > a.selected {
+	color: #00cec9;
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.3vh;
