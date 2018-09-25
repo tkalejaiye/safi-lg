@@ -22,7 +22,7 @@ html, body {
 
 .contact-header {
 	align-items: center;
-	background: url("../assets/contact_header_image.png");
+	background: url("../assets/images/contact_header_image.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	display: flex;
@@ -99,7 +99,7 @@ html, body {
 
 .home-header {
 	align-items: center;
-	background: url("../assets/home_header_image.png");
+	background: url("../assets/images/home_header_image.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	display: flex;
@@ -107,6 +107,7 @@ html, body {
 	justify-content: center;
 	margin: 0 auto;
 	width: 1326px;
+	animation: fade-in 1s 1 ease-in-out;
 }
 
 .home-header::before {
@@ -116,13 +117,13 @@ html, body {
 	content: '';
 	height: 575px;
 	margin: 0 auto;
-	opacity: 0.6;
+	opacity: 0.3;
 	position: absolute;
 	width: 1326px;
 }
 
 .logo {
-	background: url("../assets/logo.png");
+	background: url("../assets/images/logo.png");
 	height: 180px;
 	width: 441px;
 	z-index: 99;
@@ -185,7 +186,7 @@ html, body {
 
 .menu-header {
 	align-items: center;
-	background: url("../assets/menu_header_image.png");
+	background: url("../assets/images/menu_header_image.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	display: flex;
@@ -193,6 +194,17 @@ html, body {
 	justify-content: center;
 	margin: 0 auto;
 	width: 1326px;
+	animation: fade-in 1s 1 ease-in-out;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .menu-header::before {
@@ -202,7 +214,7 @@ html, body {
 	content: '';
 	height: 575px;
 	margin: 0 auto;
-	opacity: 0.6;
+	opacity: 0.3;
 	position: absolute;
 	width: 1326px;
 }
