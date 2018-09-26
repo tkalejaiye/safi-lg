@@ -285,8 +285,9 @@ html, body {
 	text-decoration: none;
 }
 
+.mini-nav > span > a.selected,
 .nav-links-center > span > a.selected {
-	color: #00cec9;
+	color: #00cec9 !important;
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.3vh;
