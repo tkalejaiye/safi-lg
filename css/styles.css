@@ -421,3 +421,18 @@ html, body {
 .bottom-quote > p {
 	text-align: right;
 }
+
+#cursor {
+	font-size: 24;
+	color: black;
+  animation: blink .7s infinite ease
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
