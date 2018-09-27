@@ -29,7 +29,8 @@ html, body {
 	height: 575px;
 	justify-content: center;
 	margin: 0 auto;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 }
 
 .contact-header::before {
@@ -41,7 +42,28 @@ html, body {
 	margin: 0 auto;
 	opacity: 0.6;
 	position: absolute;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
+}
+
+.contact-body {
+	display: flex;
+}
+
+.contact-body > div {
+	display: inline-block;
+	margin-bottom: 120px;
+	margin-top: 20px;
+	text-align: center;
+	width: 49.8%;
+}
+
+.contact-text {
+	letter-spacing: 0.1em;
+	line-height: 29px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 .content {
@@ -106,7 +128,8 @@ html, body {
 	height: 575px;
 	justify-content: center;
 	margin: 0 auto;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 	animation: fade-in 1s 1 linear;
 }
 
@@ -119,7 +142,8 @@ html, body {
 	margin: 0 auto;
 	opacity: 0.3;
 	position: absolute;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 }
 
 .logo {
@@ -127,6 +151,12 @@ html, body {
 	height: 180px;
 	width: 441px;
 	z-index: 99;
+}
+
+.map-holder {
+	display: flex;
+	justify-content: center;
+	margin: 10px auto;
 }
 
 .menu,
@@ -151,7 +181,7 @@ html, body {
 	margin: 8px 0;
 	outline: none;
 	padding: 45px;
-	width: 33.3%;
+	width: 50%;
 }
 
 .menu > .header > button:nth-child(even),
@@ -193,7 +223,8 @@ html, body {
 	height: 575px;
 	justify-content: center;
 	margin: 0 auto;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 	animation: fade-in 1s 1 linear;
 }
 
@@ -217,7 +248,8 @@ html, body {
 	margin: 0 auto;
 	opacity: 0.3;
 	position: absolute;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 }
 
 .navbar {
@@ -227,7 +259,8 @@ html, body {
 	margin: auto;
 	padding-right: 0;
 	position: relative;
-	width: 1326px;
+	max-width: 1326px;
+	width: 100%;
 }
 
 .nav-links-center {
@@ -235,6 +268,10 @@ html, body {
 	display: flex;
 	height: 90px;
 	justify-content: center;
+}
+
+.nav-links-center > span {
+	height: 30px;
 }
 
 .nav-links-center > span > a {
@@ -248,8 +285,9 @@ html, body {
 	text-decoration: none;
 }
 
+.mini-nav > span > a.selected,
 .nav-links-center > span > a.selected {
-	color: #00cec9;
+	color: #00cec9 !important;
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 0.3vh;
@@ -338,9 +376,44 @@ html, body {
 	width: 20%;
 }
 
+.text-header-nw {
+	color: black;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.2vh;
+	line-height: 4vh;
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.text-header-nw::after {
+	background: #00CEC9;
+	content: '';
+	display: block;
+	height: 1px;
+	margin: auto;
+	width: 10%;
+}
+
 #home-content {
-	width: 1326px;
 	margin: 0 auto;
+	max-width: 1326px;
+	width: 100%;
+}
+
+#about-title {
+	display: block;
+	font-family: 'Century Gothic';
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+}
+
+#about-title-inner {
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.2em;
 }
 
 .about {
@@ -352,17 +425,20 @@ html, body {
 	margin-bottom: 255px;
 }
 
+.about-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
+}
 
 .about-title::after {
 	position: relative;
 	content: '';
 	display: block;
-    width: 100px;
-    height: 1px;
-    margin: auto;
-    margin-top: 20px;
-    background-color: #00CEC9;
-
+	width: 100px;
+	height: 1px;
+	margin: auto;
+	margin-top: 20px;
+	background-color: #00CEC9;
 }
 
 .about > p {
@@ -431,7 +507,7 @@ html, body {
 @keyframes blink {
   0% {
     opacity: 1;
-  }
+	}
   100% {
     opacity: 0;
   }
