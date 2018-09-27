@@ -21,7 +21,7 @@ function showMenu(menu) {
 var words = ["life is good", "things are in order", "clean heart"];
 
 // Select html element to insert text into
-var text = document.getElementById("about-title");
+var text = document.getElementById("about-title-inner");
 
 var i = 0;
 var next = 0;

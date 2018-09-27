@@ -401,6 +401,21 @@ html, body {
 	width: 100%;
 }
 
+#about-title {
+	display: block;
+	font-family: 'Century Gothic';
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+}
+
+#about-title-inner {
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+}
+
 .about {
 	margin-top: 100px;
 	display: flex;
@@ -410,6 +425,10 @@ html, body {
 	margin-bottom: 255px;
 }
 
+.about-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.3em;
+}
 
 .about-title::after {
 	position: relative;
@@ -420,7 +439,6 @@ html, body {
 	margin: auto;
 	margin-top: 20px;
 	background-color: #00CEC9;
-
 }
 
 .about > p {
@@ -489,7 +507,7 @@ html, body {
 @keyframes blink {
   0% {
     opacity: 1;
-  }
+	}
   100% {
     opacity: 0;
   }
